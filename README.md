@@ -10,14 +10,14 @@
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)
 [![Community](https://img.shields.io/badge/join-community-green.svg)](https://community.os-js.org/)
 
-# OS.js Example Service Provider
+# OS.js Gotify Notification Provider
 
-This is the Example Service Provdider for OS.js
+This provider connects to a working Gotify installation and listens for notifications, upon receving a notification it forwards it to the OS.js desktop.
 
 ## Installation
 
 ```
-npm install @osjs/example-provider
+npm install @ShadowEO/gotify-provider
 ```
 
 ## Usage
@@ -27,17 +27,23 @@ In you startup procedure, simply import and register:
 > Note: This example is written using ESM. Node does not support this out of the box, so assume this is a client scipt.
 
 ```
-import {ExampleServiceProvider} from '@osjs/example-provider'; // You want your package name here
+import {GotifyNotificationProvider} from '@ShadowEO/GotifyNotificationProvider'; // You want your package name here
 
 // ...
 
-osjs.register(ExampleServiceProvider)
+osjs.register(GotifyNotificationProvider)
 
 // ...
 
 ```
 
-Then you can use `core.make('example/instance')` or `core.make('example/singleton')` (as provided by this example).
+## PLEASE READ
+There is currently no settings UX for this provider, it requires the following settings to be set in OS.js:
+
+osjs/gotify-provider.websocket.uri
+osjs/gotify-provider.websocket.token
+
+It currently does not have the ability to retrieve the proper application icons from Gotify.
 
 ## Contribution
 

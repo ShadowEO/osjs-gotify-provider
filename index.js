@@ -28,8 +28,8 @@
  * @licence Simplified BSD License
  */
 
-import ExampleServiceProvider from './src/provider';
+import GotifyNotificationProvider from './src/provider';
 
 export {
-  ExampleServiceProvider
+  GotifyNotificationProvider
 };

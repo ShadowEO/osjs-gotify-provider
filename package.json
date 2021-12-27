@@ -1,25 +1,25 @@
 {
-  "name": "@osjs/example-provider",
+  "name": "@ShadowEO/gotify-provider",
   "version": "1.0.3",
-  "description": "OS.js Example Service Provider",
+  "description": "OS.js Gotify Notification Service Provider",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/os-js/osjs-example-provider.git"
+    "url": "git+https://github.com/ShadowEO/osjs-gotify-provider.git"
   },
   "keywords": [
     "osjs"
   ],
   "dependencies": {},
-  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "author": "Richard Blair <dreamcaster23@gmail.com>",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/os-js/osjs-example-provider/issues"
+    "url": "https://github.com/ShadowEO/osjs-gotify-provider/issues"
   },
-  "homepage": "https://github.com/os-js/osjs-example-provider#readme",
+  "homepage": "https://github.com/ShadowEO/osjs-gotify-provider#readme",
   "osjs": {
     "type": "provider"
   },
